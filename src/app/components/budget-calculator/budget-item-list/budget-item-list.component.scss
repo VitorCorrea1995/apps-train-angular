@@ -1,0 +1,25 @@
+.budget-items-section .budget-items-container {
+    max-width: 680px;
+
+    .income-column, .expenses-column {
+
+        h1 {
+            font-family: 'Lato';
+            font-size: 24px;
+            font-weight: 900;
+        }
+    }
+
+    .income-column {
+        h1 {
+            color: green;
+        }
+    }
+
+    .expenses-column {
+        h1 {
+            color: red;
+        }
+    }
+
+}

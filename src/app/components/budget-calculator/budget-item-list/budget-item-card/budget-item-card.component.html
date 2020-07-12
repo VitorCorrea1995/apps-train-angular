@@ -1,0 +1,11 @@
+<div class="root d-flex flex-row w-100">
+    <div class="budget-item d-flex w-100" [ngClass]="{'income': budgetItem.amount >= 0, 'expense': budgetItem.amount < 0}">
+        <div class="description mr-3 pt-2 pl-1">
+            <p>{{budgetItem.description}}</p>
+        </div>
+        <div class="ml-auto amount d-flex flex-row pt-1">
+            <p class="mt-1">{{budgetItem.amount}}</p>
+            <i class="fa fa-times mt-2 mx-2" (click)="deleteBudget()"></i>
+        </div>
+    </div>
+</div>

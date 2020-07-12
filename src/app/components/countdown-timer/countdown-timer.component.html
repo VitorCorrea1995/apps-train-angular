@@ -1,0 +1,9 @@
+<app-top-bar [title]="TITLE"></app-top-bar>
+<mat-card class="mx-auto w-25 bg-secondary">
+    <div class="event-data-input-box container">
+        <input class="form-control mx-2"  [(ngModel)]="eventName" />
+        <input class="form-control mx-2"  [(ngModel)]="eventDate" />
+        <input class="form-control mx-2"  [(ngModel)]="eventTime" />
+        <button type="button" class="btn btn-light mt-2" (click)=startColarization()>{{started ? 'Parar' : 'Começar'}}</button>
+    </div>
+</mat-card>

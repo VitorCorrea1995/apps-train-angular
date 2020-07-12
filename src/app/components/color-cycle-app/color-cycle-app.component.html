@@ -1,0 +1,33 @@
+<app-top-bar [title]="TITLE"></app-top-bar>
+<mat-card class="mx-auto w-25 bg-secondary">
+    <div class="color-app container">
+        <div class="color-input h-auto">
+            <div class="d-flex flex-row ml-5">
+                <span class="pill badge badge-primary"></span>
+                <div class="alert alert-dark mr-5">
+                    Color
+                </div>
+                <div class="alert alert-dark ml-5">
+                    Increment
+                </div>
+            </div>
+            <div class="d-flex flex-row mt-2">
+                <span class="pill badge badge-primary mr-3">B</span>
+                <input class="form-control mx-2"  [(ngModel)]="colorBlue" />
+                <input class="form-control ml-2"  [(ngModel)]="colorBlueIncrement"/>
+            </div>
+            <div class="d-flex flex-row mt-2">
+                <span class="pill badge badge-danger mr-3">R</span>
+                <input class="form-control mx-2" [(ngModel)]="colorRed"/>
+                <input class="form-control ml-2" [(ngModel)]="colorRedIncrement"/>
+            </div>
+            <div class="d-flex flex-row mt-2">
+                <span class="pill badge badge-success mr-3">G</span>
+                <input class="form-control mx-2"  [(ngModel)]="colorGreen" />
+                <input class="form-control ml-2"  [(ngModel)]="colorGreenIncrement"/>
+            </div>
+            <button type="button" class="btn btn-light mt-2" (click)=startColarization()>{{started ? 'Parar' : 'Começar'}}</button>
+        </div>
+        <div class="colorize"></div>
+    </div>
+</mat-card>

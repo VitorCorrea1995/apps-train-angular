@@ -1,0 +1,11 @@
+<app-top-bar [title]="TITLE"></app-top-bar>
+<div class="bg-secondary border-container d-flex border border-primary mx-auto mt-5">
+    <div class="example-box" cdkDragLockAxis="y" cdkDragBoundary=".border-container" (cdkDragEnded)="verticalRightBorderHandler($event)" cdkDrag></div>
+    <div class="example-box" cdkDragLockAxis="x" cdkDragBoundary=".border-container" (cdkDragEnded)="horizontalRightBorderHandler($event)" cdkDrag></div>
+    <div class="element-display-container border border-secondary mx-auto my-auto" #controlledElement></div>
+    <div class="example-box mt-auto" cdkDragLockAxis="x" cdkDragBoundary=".border-container" (cdkDragEnded)="horizontalLeftBorderHandler($event)" cdkDrag></div>
+    <div class="example-box ml-auto" cdkDragLockAxis="y" cdkDragBoundary=".border-container" (cdkDragEnded)="verticalLeftBorderHandler($event)" cdkDrag></div>
+</div>
+<div class="border-result">
+
+</div>

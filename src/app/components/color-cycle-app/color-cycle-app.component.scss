@@ -1,0 +1,29 @@
+.pill {
+    width: 60px;
+    height: 35px;
+    text-align: center;
+}
+
+.colorize {
+    width: 400px;
+    height: 300px;
+    -webkit-animation: bgcolorchange 4s infinite; /* Chrome, Safari, Opera */ 
+    animation: 4s infinite bgcolorchange;
+  }
+  @keyframes bgcolorchange {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: green;
+    }
+    50% {
+      background-color: yellow;
+    }
+    75% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: red;
+    }
+}

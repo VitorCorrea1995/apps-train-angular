@@ -1,0 +1,40 @@
+.budget-item {
+    background-color: lightgray !important;
+    cursor: pointer;
+    .description {
+        font-size: 18px;
+        width: 200px;
+    }
+}
+
+.budget-item:hover {
+    background-color: darkgray !important;
+}
+
+i {
+    cursor: pointer;
+}
+
+.expense {
+    cursor: default;
+    p, i {
+        color: red;
+    
+    }
+
+    .amount {
+        background-color: lightsalmon;
+    }
+}
+
+.income {
+    cursor: default;
+    p, i {
+        color: green;
+    
+    }
+
+    .amount {
+        background-color: lightgreen;
+    }
+}

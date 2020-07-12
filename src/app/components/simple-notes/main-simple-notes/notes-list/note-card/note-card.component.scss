@@ -1,0 +1,11 @@
+@import '../../../../../../scss-properties-constants.scss';
+
+.note-card-container {
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px 2px map-get($colors, --box-shadow-color);
+
+    &:hover {
+        cursor: pointer;
+        background-color: map-get($colors, --secondary-background-color-hover) !important;
+    }
+}

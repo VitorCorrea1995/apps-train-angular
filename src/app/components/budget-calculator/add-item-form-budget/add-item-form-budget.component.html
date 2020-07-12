@@ -1,0 +1,7 @@
+<form class="bg-secondary" #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <div class="field d-flex flex-row">
+        <input type="number" required name="amount" placeholder="Amount" class="amount form-control" [ngModel]="item.amount">
+        <input type="text" required name="description" placeholder="Description" class="description form-control mx-2" [ngModel]="item.description">
+        <button type="submit" class="btn btn-dark" [disabled]="!itemForm.valid">{{ADD}}</button>
+    </div>
+</form>

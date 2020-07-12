@@ -1,0 +1,25 @@
+nav {
+    display: grid;
+
+    ul {
+        list-style: none;
+
+        li {
+            i {
+                font-size: 30px;
+                &.fa-html5 {
+                    color: #ff073a;
+                }
+
+                &.fa-css3-alt {
+                    color:#4666FF;
+                }
+
+                &.fa-js {
+                    color:#f7ff00;
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<app-top-bar [title]="TITLE"></app-top-bar>
+<mat-card class="bg-secondary mx-auto w-25 mt-2">
+    <div class="calculator container">
+        <div class="display">
+            <div class="d-flex flex-row">
+                <button type="button" class="btn btn-dark" (click)="display=''" >{{AC}}</button>
+                <input class="form-control text-right" [disabled]="true" [(ngModel)]="display">
+            </div>
+        </div>
+        <div class="control-buttons container-fluid mt-2">
+            <div class="row">
+                <button type="button" class="col-3 btn btn-dark" 
+                *ngFor="let control of CONTROLS_INPUT_ORDER" (click)="handleNewDigit(control)">
+                    {{control}}
+                </button>
+            </div>
+        </div>
+    </div>
+</mat-card>

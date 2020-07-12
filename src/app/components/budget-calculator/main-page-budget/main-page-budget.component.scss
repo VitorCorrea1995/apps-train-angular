@@ -1,0 +1,27 @@
+@import '../.././../../scss-properties-constants.scss';
+
+.total-budget-section {
+    height: 250px;
+
+    h2 {
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 58px;
+    
+        &.green {
+            color: map-get($colors, --basic-green)
+        }
+
+        &.red {
+            color: map-get($colors, --basic-red)
+        }
+    }
+}
+
+.add-item-section {
+
+    .add-item-container {
+        width: 600px;
+        background-color: map-get($colors, --basic-red-light);
+    }
+}

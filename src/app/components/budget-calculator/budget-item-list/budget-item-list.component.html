@@ -1,0 +1,25 @@
+<section class="budget-items-section d-flex p-5">
+    <div class="budget-items-container d-flex h-100 w-100 justify-content-center align-items-center">
+        <div class="income-column d-flex flex-column mr-5">
+            <h1 class="text-uppercase">{{INCOMES}}</h1>
+            <div *ngFor="let budgetItem of budgetItems">
+                <app-budget-item-card 
+                    *ngIf="budgetItem.amount >= 0"
+                    (deleteBudgetEvent)="deleteBudget(budgetItem)"
+                    [budgetItem]="budgetItem">
+                </app-budget-item-card>
+            </div>
+        </div>
+
+        <div class="expenses-column flex-column ml-5">
+            <h1 class="text-uppercase">{{EXPENSES}}</h1>
+            <div *ngFor="let budgetItem of budgetItems">
+                <app-budget-item-card 
+                    *ngIf="budgetItem.amount < 0"
+                    (deleteBudgetEvent)="deleteBudget(budgetItem)"
+                    [budgetItem]="budgetItem">
+                </app-budget-item-card>
+            </div>
+        </div>
+    </div>
+</section>

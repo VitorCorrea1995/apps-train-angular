@@ -1,0 +1,27 @@
+$colors: (
+        --background-color: #1e1e1e,
+        --secondary-background-color: #2d2e2e,
+        --secondary-background-color-hover: #8d9191,
+        --green-success:#89df89,
+        --red-error:#f8b7bd,
+        --basic-green-dark:#176944,
+        --basic-green:#30c582,
+        --basic-yellow:#cdcf4b,
+        --basic-red-dark:#852424,
+        --basic-red:#d83232,
+        --basic-red-light:#e66b6b,
+        --basic-blue:#2c72b8,
+        --basic-grey:#8d8a8a,
+        --basic-grey-light:#d1c9c9,
+        --default-text-color: #413838,
+        --default-text-color-dark: #111010,
+        --default-text-color-light: #d8caca,
+        --box-shadow-color: rgba(black, 0.068)
+);
+
+$font-size: (
+        --default: 14px,
+        --title: 22px,
+        --subtitle: 18px,
+        --info-text: 12px,
+);

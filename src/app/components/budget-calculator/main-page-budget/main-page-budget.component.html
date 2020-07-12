@@ -1,0 +1,14 @@
+<app-top-bar [title]="TITLE"></app-top-bar>
+<section class="total-budget-section d-flex bg-secondary text-white justify-content-center align-items-center">
+    <h2 [ngClass]="{'green': totalAmountsOfBudgets>=0, 'red': totalAmountsOfBudgets < 0}">{{totalAmountsOfBudgets}}</h2>
+</section>
+<section class="add-item-section d-flex justify-content-center align-items-center mt-3">
+    <div class="add-item-container">
+       <app-add-item-form-budget (formSubmit)="addNewItem($event)"></app-add-item-form-budget>
+    </div>
+</section>
+<app-budget-item-list 
+    class="d-flex justify-content-center align-items-center"
+    (delete)="handleDeleteBudget($event)"
+    [budgetItems]="budgetItems">
+</app-budget-item-list>
